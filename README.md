@@ -31,7 +31,7 @@ nix develop
 Запуск:
 
 ```sh
-python examples/ring_allreduce.py
+python src/examples/ring_allreduce.py
 ```
 
 Результат сохраняется в файл `output.xml`. Его сохранённая копия доступна в [artifacts/example/ring_allreduce_2.xml](artifacts/example/ring_allreduce_2.xml).
@@ -46,6 +46,6 @@ python examples/ring_allreduce.py
 - [Состояние проекта](nis/status.md)
 - [Результаты](nis/results.md)
 - [Финальная версия](nis/final.md)
-- Код: [путь]
+- Код: [src/](src/)
 - Тесты: [путь]
 - Данные: [путь или описание внешнего хранилища]

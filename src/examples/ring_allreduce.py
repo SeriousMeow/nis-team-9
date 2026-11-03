@@ -1,3 +1,4 @@
+import sys
 from pathlib import Path
 
 from msccl.language import MSCCLProgram, ThreadblockPolicy
@@ -7,6 +8,8 @@ from msccl.topologies import fully_connected
 
 
 def main():
+    output_filename = sys.argv[1] if len(sys.argv) >= 2 else "output.xml"
+
     program = MSCCLProgram(
         "ring_allreduce_2", fully_connected(2), AllReduce(2, 2, True), 1,
         threadblock_policy=ThreadblockPolicy.manual,
@@ -18,7 +21,7 @@ def main():
 
         xml = program.generate_xml()
 
-    Path("output.xml").write_text(xml, encoding="utf-8")
+    Path(output_filename).write_text(xml, encoding="utf-8")
 
 
 if __name__ == "__main__":
