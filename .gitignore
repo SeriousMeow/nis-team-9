@@ -7,4 +7,9 @@ __pycache__/
 # direnv
 .direnv
 .envrc
+
+# MacOS
 .DS_Store
+
+# project
+/tmp-workspace
