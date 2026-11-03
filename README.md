@@ -26,7 +26,7 @@ nix develop
 
 ### Запуск примера
 
-Для проверки работы библиотеки мы использовали библиотечную реализацию алгоритма кольцевого AllReduce на 2 GPU. Код примера находится в [examples/ring_allreduce.py](examples/ring_allreduce.py).
+Для проверки работы библиотеки мы использовали библиотечную реализацию алгоритма кольцевого AllReduce на 2 GPU. Код примера находится в [src/examples/ring_allreduce.py](src/examples/ring_allreduce.py).
 
 Запуск:
 
